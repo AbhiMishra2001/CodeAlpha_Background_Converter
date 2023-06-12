@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Converter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <img src="image/code-Alpha-Logo.jpeg" alt="">
+    <h3> Background Converter Webpage</h3>
+    <h4>Click Button And Convert Background</h4>
+   <button>Click Me</button>
+ 
+
+   
+   <script type="text/javascript">
+
+var color =["#F18904","#AD0341", "#36688D",   "#A7414A", "#563838", "#0444BF",  "#BED905", "#AD2345" ,"#F18904", "#1D65A6"];
+var i =0;
+document.querySelector("button").addEventListener("click",
+function(){
+    i = i < color.length ? ++i : 0;
+    document.querySelector("body").style.background = color[i]
+})
+
+   </script>
+
+   
+<footer>
+    <div class="footer-section">
+      <div class="footer-section-container">
+        <h5 class="footer-details-heading">Submit To Code Alpha </h5>
+          <div class="footer-section-container-details">
+            <h5  class="footer-section-container-heading-2">
+              Project Name - Background Converter </h5>
+            <div class="footer-section-container-details-1">
+                 
+            </div>
+          </div>
+      </div>
+      </div>
+  </footer>
+</body>
+</html>
